@@ -1,0 +1,1716 @@
+{
+	"id": "fbfb365a-050c-4868-b86b-5ec900d2086c",
+	"name": "Java",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"a73b80ff-3e54-48ad-a635-23ebbad52af7",
+		"a7ba0a59-c60f-42ed-a089-23c16d17602b",
+		"51da6877-5bfc-4d17-825f-3f9cf6e32e89",
+		"3488970d-1980-40b7-a041-d1c093a5430d",
+		"28616906-09b2-41b9-8801-eabe6444c5a2",
+		"54c91817-abd5-40d2-89e0-9073da3658a5",
+		"37871a93-cc23-40cd-97e7-eee29acf4ce4",
+		"0bfb4579-7eb4-48c3-8c03-2af3b277629c",
+		"4699d972-fb5e-4ecc-9095-b41106ed7684",
+		"bf76878d-756e-42e9-ba9a-aec7ae342daf",
+		"3acbf19c-d0d1-4411-a367-bd3d9414703e",
+		"bc5c3e0c-9dbd-4435-a127-6056ba90910b",
+		"94603b81-1c14-40a7-ab4f-1046e78ea44a",
+		"8c1d2026-a8cd-4670-bfd6-1ee0368571ae",
+		"27de65e3-8c82-41d3-b87a-af451c4e4e40",
+		"5b7dc0a9-21c2-4aa9-9ff2-f59682653e80",
+		"367c8b36-96ce-47f9-904e-eef2a1e29c45",
+		"b7e9d7c1-2719-4c5d-9e8e-f09145c95241"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0bfb4579-7eb4-48c3-8c03-2af3b277629c",
+			"name": "GetProductsCategory",
+			"url": "http://localhost:8080/shopApi/rest/product/GPU/category",
+			"description": "http://localhost:8080/shopApi/rest/product/{categoryName}/category",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "27de65e3-8c82-41d3-b87a-af451c4e4e40",
+			"name": "AddComment",
+			"url": "http://localhost:8080/shopApi/rest/product/1/comments",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "a89e39d9-4d0a-40e9-9415-2b28a28ae392",
+					"name": "AddComment",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": null,
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\n    \"title\": \"Best option\",\n    \"content\": \"Best on the market thankss\"\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product/1/comments"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "27de65e3-8c82-41d3-b87a-af451c4e4e40",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				}
+			],
+			"rawModeData": "{\r\n  \"title\" : \"Best option\",\r\n  \"content\" : \"Best on the market thankss\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "28616906-09b2-41b9-8801-eabe6444c5a2",
+			"name": "AddProduct4",
+			"url": "http://localhost:8080/shopApi/rest/product",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "65382c6b-e2fb-47bd-a989-4228a8356f65",
+					"name": "AddProduct1",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1050\",\r\n  \"price\" : \"550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "28616906-09b2-41b9-8801-eabe6444c5a2",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "733dcccb-a62f-43be-b598-c34900a28216",
+					"name": "AddProduct3",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"ATI RADEON\" ,\r\n  \"name\" : \"R 1050\",\r\n  \"price\" : \"750\",\r\n  \"category\"\t: \"GPU\",\r\n  \"description\" : \"Some DEscription\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "28616906-09b2-41b9-8801-eabe6444c5a2",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "b84ee47a-5483-4d00-ae25-87516c208017",
+					"name": "AddProduct",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"TOSHIBA\" ,\r\n  \"name\" : \"Canvio Basic\",\r\n  \"price\" : \"350\",\r\n  \"category\"\t: \"HDD\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "28616906-09b2-41b9-8801-eabe6444c5a2",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "d50d42c9-fa4d-4861-91ff-544c1153ba20",
+					"name": "AddProduct4",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"G.SKILL\" ,\r\n  \"name\" : \"FLARE X\",\r\n  \"price\" : \"650\",\r\n  \"category\"\t: \"RAM\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "28616906-09b2-41b9-8801-eabe6444c5a2",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "da04a04d-5cd2-48af-8c17-eb6478e006fc",
+					"name": "AddProduct2",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1070\",\r\n  \"price\" : \"1550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "28616906-09b2-41b9-8801-eabe6444c5a2",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				}
+			],
+			"rawModeData": "{\r\n\t\"brand\" : \"G.SKILL\" ,\r\n  \"name\" : \"FLARE X\",\r\n  \"price\" : \"650\",\r\n  \"category\"\t: \"RAM\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3488970d-1980-40b7-a041-d1c093a5430d",
+			"name": "AddProduct3",
+			"url": "http://localhost:8080/shopApi/rest/product",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n\t\"brand\" : \"TOSHIBA\" ,\r\n  \"name\" : \"Canvio Basic\",\r\n  \"price\" : \"350\",\r\n  \"category\"\t: \"HDD\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "367c8b36-96ce-47f9-904e-eef2a1e29c45",
+			"name": "AddComment2",
+			"url": "http://localhost:8080/shopApi/rest/product/3/comments",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "79cb0b0f-5cce-4a69-8536-cff09cf54b82",
+					"name": "AddComment",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": null,
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\n    \"title\": \"Best option\",\n    \"content\": \"Best on the market thankss\"\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product/1/comments"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "367c8b36-96ce-47f9-904e-eef2a1e29c45",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				}
+			],
+			"rawModeData": "{\r\n  \"title\" : \"Best option\",\r\n  \"content\" : \"Best on the market thankss\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "37871a93-cc23-40cd-97e7-eee29acf4ce4",
+			"name": "GetProductsName",
+			"url": "http://localhost:8080/shopApi/rest/product/Gtx 1070/name",
+			"description": "http://localhost:8080/shopApi/rest/product/{productName/name",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "3acbf19c-d0d1-4411-a367-bd3d9414703e",
+			"name": "GetCommentsProduct",
+			"url": "http://localhost:8080/shopApi/rest/product/",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "4699d972-fb5e-4ecc-9095-b41106ed7684",
+			"name": "GetProductsPrice",
+			"url": "http://localhost:8080/shopApi/rest/product/400,1000/price",
+			"description": "http://localhost:8080/shopApi/rest/product/{from}},{to}/price\n",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "51da6877-5bfc-4d17-825f-3f9cf6e32e89",
+			"name": "AddProduct2",
+			"url": "http://localhost:8080/shopApi/rest/product",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "3fe6130b-adcc-497f-9db6-5998df1e7e48",
+					"name": "AddProduct3",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"ATI RADEON\" ,\r\n  \"name\" : \"R 1050\",\r\n  \"price\" : \"750\",\r\n  \"category\"\t: \"GPU\",\r\n  \"description\" : \"Some DEscription\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "51da6877-5bfc-4d17-825f-3f9cf6e32e89",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "5c0f0314-b8d0-47d4-a61e-bb171342c394",
+					"name": "AddProduct4",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"G.SKILL\" ,\r\n  \"name\" : \"FLARE X\",\r\n  \"price\" : \"650\",\r\n  \"category\"\t: \"RAM\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "51da6877-5bfc-4d17-825f-3f9cf6e32e89",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "72ae431e-b2c4-44a3-a15d-3b2a62e92206",
+					"name": "AddProduct",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"TOSHIBA\" ,\r\n  \"name\" : \"Canvio Basic\",\r\n  \"price\" : \"350\",\r\n  \"category\"\t: \"HDD\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "51da6877-5bfc-4d17-825f-3f9cf6e32e89",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "931836b3-86bf-4cec-8cfc-4d1d73510d46",
+					"name": "AddProduct1",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1050\",\r\n  \"price\" : \"550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "51da6877-5bfc-4d17-825f-3f9cf6e32e89",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "da959acd-4e55-4ccd-ab63-ce4f6f84a772",
+					"name": "AddProduct2",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1070\",\r\n  \"price\" : \"1550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "51da6877-5bfc-4d17-825f-3f9cf6e32e89",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				}
+			],
+			"rawModeData": "{\r\n\t\"brand\" : \"ATI RADEON\" ,\r\n  \"name\" : \"R 1050\",\r\n  \"price\" : \"750\",\r\n  \"category\"\t: \"GPU\",\r\n  \"description\" : \"Some DEscription\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "54c91817-abd5-40d2-89e0-9073da3658a5",
+			"name": "GetProducts",
+			"url": "http://localhost:8080/shopApi/rest/product/",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "5b7dc0a9-21c2-4aa9-9ff2-f59682653e80",
+			"name": "AddComment1",
+			"url": "http://localhost:8080/shopApi/rest/product/2/comments",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "5719f42a-b385-4995-8e74-373b56220047",
+					"name": "AddComment",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": null,
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\n    \"title\": \"Best option\",\n    \"content\": \"Best on the market thankss\"\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product/1/comments"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "5b7dc0a9-21c2-4aa9-9ff2-f59682653e80",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				}
+			],
+			"rawModeData": "{\r\n  \"title\" : \"Best option\",\r\n  \"content\" : \"Best on the market thankss\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8c1d2026-a8cd-4670-bfd6-1ee0368571ae",
+			"name": "EditProducts",
+			"url": "http://localhost:8080/shopApi/rest/product/1",
+			"description": "http://localhost:8080/shopApi/rest/product/{productId}\npola name i category sa wymagane , reszta gdy nie wprowadzona ustawia na 0 badz puste pole",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"name\" : \"FLARE X\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "94603b81-1c14-40a7-ab4f-1046e78ea44a",
+			"name": "DeleteComment",
+			"url": "http://localhost:8080/shopApi/rest/product/1/comments",
+			"description": "http://localhost:8080/shopApi/rest/product/{commentId}/comments",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "a73b80ff-3e54-48ad-a635-23ebbad52af7",
+			"name": "AddProduct",
+			"url": "http://localhost:8080/shopApi/rest/product",
+			"description": "dostepne kategorie to GPU,CPU,HDD,RAM\nlista do znaleznia w klasie Category",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "0d1d6da3-8dd1-425c-9518-13620f2e3446",
+					"name": "AddProduct1",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1050\",\r\n  \"price\" : \"550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a73b80ff-3e54-48ad-a635-23ebbad52af7",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "282aade9-03bf-4e47-b5be-e0ee71257d3a",
+					"name": "AddProduct",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"TOSHIBA\" ,\r\n  \"name\" : \"Canvio Basic\",\r\n  \"price\" : \"350\",\r\n  \"category\"\t: \"HDD\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a73b80ff-3e54-48ad-a635-23ebbad52af7",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "519117d3-dcc2-41f7-bdd3-483bef7dc02b",
+					"name": "AddProduct3",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"ATI RADEON\" ,\r\n  \"name\" : \"R 1050\",\r\n  \"price\" : \"750\",\r\n  \"category\"\t: \"GPU\",\r\n  \"description\" : \"Some DEscription\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a73b80ff-3e54-48ad-a635-23ebbad52af7",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "67fa65f2-ead2-49ae-8c67-fdd6d1fbe2f3",
+					"name": "AddProduct2",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1070\",\r\n  \"price\" : \"1550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a73b80ff-3e54-48ad-a635-23ebbad52af7",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "d4dcc368-307e-4432-ad79-1635e228dd4b",
+					"name": "AddProduct4",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"G.SKILL\" ,\r\n  \"name\" : \"FLARE X\",\r\n  \"price\" : \"650\",\r\n  \"category\"\t: \"RAM\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a73b80ff-3e54-48ad-a635-23ebbad52af7",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				}
+			],
+			"rawModeData": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1050\",\r\n  \"price\" : \"550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a7ba0a59-c60f-42ed-a089-23c16d17602b",
+			"name": "AddProduct1",
+			"url": "http://localhost:8080/shopApi/rest/product",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "4547924c-6b58-47cc-ba8f-1c7e3939b38f",
+					"name": "AddProduct3",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"ATI RADEON\" ,\r\n  \"name\" : \"R 1050\",\r\n  \"price\" : \"750\",\r\n  \"category\"\t: \"GPU\",\r\n  \"description\" : \"Some DEscription\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a7ba0a59-c60f-42ed-a089-23c16d17602b",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "8a3c0237-2641-46da-9ecf-53d1ac2346d6",
+					"name": "AddProduct4",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"G.SKILL\" ,\r\n  \"name\" : \"FLARE X\",\r\n  \"price\" : \"650\",\r\n  \"category\"\t: \"RAM\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a7ba0a59-c60f-42ed-a089-23c16d17602b",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "ccc5f2e8-20c9-42cf-898a-5734db7457aa",
+					"name": "AddProduct",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"TOSHIBA\" ,\r\n  \"name\" : \"Canvio Basic\",\r\n  \"price\" : \"350\",\r\n  \"category\"\t: \"HDD\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a7ba0a59-c60f-42ed-a089-23c16d17602b",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "dc853e22-7984-4ee8-b5ba-f5fab23759df",
+					"name": "AddProduct1",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1050\",\r\n  \"price\" : \"550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a7ba0a59-c60f-42ed-a089-23c16d17602b",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				},
+				{
+					"id": "de69c0d0-11e9-42db-b820-661b14fc3e3b",
+					"name": "AddProduct2",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": "0",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1070\",\r\n  \"price\" : \"1550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "a7ba0a59-c60f-42ed-a089-23c16d17602b",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				}
+			],
+			"rawModeData": "{\r\n\t\"brand\" : \"GEFORCE\" ,\r\n  \"name\" : \"Gtx 1070\",\r\n  \"price\" : \"1550\",\r\n  \"category\"\t: \"GPU\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b7e9d7c1-2719-4c5d-9e8e-f09145c95241",
+			"name": "AddComment3",
+			"url": "http://localhost:8080/shopApi/rest/product/4/comments",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "dc85e167-3b46-4994-b9c4-50d1343e0800",
+					"name": "AddComment",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": null,
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": "{\n    \"title\": \"Best option\",\n    \"content\": \"Best on the market thankss\"\n}",
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:8080/shopApi/rest/product/1/comments"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Payara Server  5.183 #badassfish"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Servlet/4.0 JSP/2.3 (Payara Server  5.183 #badassfish Java/Oracle Corporation/1.8)"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookies": null,
+					"request": "b7e9d7c1-2719-4c5d-9e8e-f09145c95241",
+					"collection": "fbfb365a-050c-4868-b86b-5ec900d2086c"
+				}
+			],
+			"rawModeData": "{\r\n  \"title\" : \"Best option\",\r\n  \"content\" : \"Best on the market thankss\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "bc5c3e0c-9dbd-4435-a127-6056ba90910b",
+			"name": "DeleteProduct",
+			"url": "http://localhost:8080/shopApi/rest/product/1",
+			"description": "http://localhost:8080/shopApi/rest/product/{productId}",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "bf76878d-756e-42e9-ba9a-aec7ae342daf",
+			"name": "GetCommentsAll",
+			"url": "http://localhost:8080/shopApi/rest/product/",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}
