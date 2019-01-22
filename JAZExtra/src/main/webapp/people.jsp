@@ -39,7 +39,7 @@
                             <td><span data-bind="text: id"></span></td>
                             <td><input type="text" class="form-control" data-bind="value: firstName"/></td>
                             <td><input type="text"  class="form-control"  data-bind="value: lastName"/></td>
-                            <td><select class="form-control" type="text" data-bind="value: gender">
+                            <td><select class="form-control" data-bind="value: gender">
 									<option value="Male">Male</option>
 									<option value="Female">Female</option>
 								</select></td>

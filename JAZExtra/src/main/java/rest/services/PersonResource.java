@@ -23,30 +23,24 @@ import domain.Person;
 public class PersonResource {
 	@PersistenceContext
 	EntityManager em;
-	/*//--------------GET ALL PERSON--------------
+	int quantityPerPage=5;
+
+	//--------------GET PERSON PAGE--------------
 		@GET
-		@Produces(MediaType.APPLICATION_JSON)
-		public List<Person> getAll(){
-			List<Person> result =em.createNamedQuery("person.all", Person.class).getResultList();
-			return result;
-		}*/
-		//--------------GET PERSON PAGE--------------
-		@GET
-		
 		@Produces(MediaType.APPLICATION_JSON)
 		public List<Person> getPage(@QueryParam("page") int page){
-			List<Person> result =em.createNamedQuery("person.page", Person.class)
-					.setParameter("personPageFrom", countPageQuantity(--page))
-					.setParameter("personPageTo", countPageQuantity(++page))
+			List<Person> result =em.createNamedQuery("person.all", Person.class)
+					.setFirstResult(countPageQuantity(--page))
+					.setMaxResults(quantityPerPage)
 					.getResultList();
+			
 			return result;
 		}
 	// --------------ADD PERSON--------------
 		@POST
 		@Consumes(MediaType.APPLICATION_JSON)
 		public Response Add(Person person) {
-			//CHECK IF EXIST !!!!!!!!!!!!!!!!!!!!
-				
+			
 			em.persist(person);
 			return Response.ok(person.getId()).build();
 		}
@@ -67,8 +61,7 @@ public class PersonResource {
 		public Response update(@PathParam("id") int id,Person person) {
 			Person result = em.find(Person.class, id);
 			if(result==null )
-				return Response.status(404).build();
-			
+				return Response.status(404).build();		
 			em.persist(updatePerson(result,person));
 			return Response.ok().build();		
 		}
@@ -83,10 +76,11 @@ public class PersonResource {
 			origin.setBirthday(update.getBirthday());
 			return origin;
 		}	
-		private int countPageQuantity(int page) {
-			int quantityPerPage=5;
+		private int countPageQuantity(int page) {	
 			return page*quantityPerPage;
 		}
+	
+	
 		
 		
 }

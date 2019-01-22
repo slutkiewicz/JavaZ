@@ -16,10 +16,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Entity
 @NamedQueries({
 	
-@NamedQuery(name="person.all", query="SELECT p FROM Person p"),
-@NamedQuery(name="person.page", query="SELECT p FROM Person p "
-		+ "where p.id >= :personPageFrom "
-		+ "and p.id <= :personPageTo ")
+@NamedQuery(name="person.all", query="SELECT p FROM Person p")
 
 })
 
@@ -36,7 +33,7 @@ public class Person implements Serializable {
 	@NotNull
 	private String lastName;
 	@NotNull
-	private String eMail;
+	private String eMail;		
 	private String gender;
 	private int age;
 	private String birthday;

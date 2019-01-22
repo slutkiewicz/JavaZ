@@ -37,7 +37,7 @@
 		<div class="form-group">
 		<label>Email <input class="form-control" type="text" data-bind="value: eMail"/></label>
 		</div><div class="form-group">
-		<label>Name <select class="form-control" type="text" data-bind="value: gender">
+		<label>Name <select class="form-control" data-bind="value: gender">
 			<option value="Male">Male</option>
 			<option value="Female">Female</option>
 		</select></label>
