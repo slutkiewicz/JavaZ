@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "25759789-d796-4a66-9989-efcbc1d07631",
+		"name": "java_extra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"age\": 1,\n        \"birthday\": \"\",\n        \"eMail\": \"asda\",\n        \"firstName\": \"asda\",\n        \"gender\": \"Male\",\n        \"id\": 1,\n        \"lastName\": \"adsa\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/extra/rest/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"extra",
+						"rest",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/extra/rest/people?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"extra",
+						"rest",
+						"people"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
